@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">OzlemKilickiran_HW1</string>
+    <string name="main_title">Midmen.eu</string>
+    <string name="continue_click">See the Events</string>
+    <string name="spinner">spinner</string>
+    <string name="mainImage">mainImage</string>
+
+
+</resources>

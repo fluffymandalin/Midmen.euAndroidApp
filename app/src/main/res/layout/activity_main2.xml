@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9EAE7"
+    android:backgroundTint="#ECECEA"
+    android:orientation="vertical"
+    android:paddingStart="34dp"
+    android:paddingEnd="34dp"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/mainImage"
+        android:layout_width="357dp"
+        android:layout_height="301dp"
+        android:background="#EAEBE8"
+        app:layout_constraintBottom_toTopOf="@id/spinnerEvents"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mainpage" />
+
+    <Spinner
+        android:id="@+id/spinnerEvents"
+        android:layout_width="320dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="350dp"
+        android:contentDescription="@string/spinner"
+        android:dropDownWidth="300dp"
+        android:scrollbarSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainImage" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@id/spinnerEvents"
+        app:layout_constraintStart_toStartOf="@id/spinnerEvents"
+        app:layout_constraintTop_toBottomOf="@id/spinnerEvents" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@id/tvResult"
+        app:layout_constraintTop_toBottomOf="@id/tvResult" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
